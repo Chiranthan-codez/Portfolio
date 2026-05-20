@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chiranthan padmashali — Get in touch. Let's build something great together." />
+  <title>Contact — Chiranthan padmashali</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.19.0/webfont/tabler-icons.min.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-logo">Loading</div>
+    <div class="preloader-bar"></div>
+  </div>
+
+  <div class="cursor-glow" id="cursor-glow"></div>
+  <button id="back-top" aria-label="Back to top"><i class="ti ti-arrow-up"></i>Top</button>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <a href="index.html" class="nav-logo">C<span>.</span>P</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle theme"></button>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ════════════════════════════
+       HEADER
+  ════════════════════════════ -->
+  <section class="section" style="padding-top:140px; padding-bottom:48px;">
+    <div class="reveal">
+      <div class="section-label">Say Hello</div>
+      <h1 class="section-title">Let's <em>Work Together</em></h1>
+      <div class="gold-divider"></div>
+      <p class="section-subtitle">
+        Whether you have a project in mind, a question about my work, or just want
+        to chat about technology — my inbox is always open.
+      </p>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════
+       CONTACT BODY
+  ════════════════════════════ -->
+  <section class="section" style="padding-top:0;">
+    <div class="contact-wrapper">
+
+      <!-- ── LEFT: Info ── -->
+      <div class="contact-info reveal">
+        <h3>Let's build something <em style="color:var(--gold);font-style:italic;">remarkable</em> together</h3>
+        <p>
+          I'm currently available for freelance projects, consulting,
+          and full-time opportunities. I typically respond within 24 hours.
+        </p>
+
+        <div class="contact-details">
+          <div class="contact-detail">
+            <!--<div class="contact-detail-icon">
+              <i class="ti ti-mail"></i>
+            </div>-->
+            <div class="contact-detail-text">
+              <span class="contact-detail-label">Email</span>
+              <span class="contact-detail-val">chiranthan@padmashali.dev</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <!--<div class="contact-detail-icon">
+              <i class="ti ti-phone"></i>
+            </div>-->
+            <div class="contact-detail-text">
+              <span class="contact-detail-label">Phone</span>
+              <span class="contact-detail-val">+91 98765 43210</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <!--<div class="contact-detail-icon">
+              <i class="ti ti-map-pin"></i>
+            </div>-->
+            <div class="contact-detail-text">
+              <span class="contact-detail-label">Location</span>
+              <span class="contact-detail-val">Bengaluru, Karnataka, India</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+           <!-- <div class="contact-detail-icon">
+              <i class="ti ti-clock"></i>
+            </div>-->
+            <div class="contact-detail-text">
+              <span class="contact-detail-label">Availability</span>
+              <span class="contact-detail-val">Mon–Fri, 9 AM – 7 PM IST</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <!--<div class="contact-detail-icon">
+              <i class="ti ti-brand-linkedin"></i>
+            </div>-->
+            <div class="contact-detail-text">
+              <span class="contact-detail-label">LinkedIn</span>
+              <span class="contact-detail-val">linkedin.com/in/chiranthanpadmashali</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map placeholder -->
+        <div class="map-placeholder">
+          <div class="map-pin">📍</div>
+          <div class="map-label">India</div>
+        </div>
+
+        <!-- Social strip on contact page -->
+        <div class="social-strip" style="margin-top:28px; padding-top:28px;">
+          <span class="social-strip-label">Follow</span>
+          <a href="https://github.com/Chiranthan-codez" class="social-icon" aria-label="GitHub"><i class="ti ti-brand-github"></i></a>
+          <a href="https://www.linkedin.com/in/chiranthan-padmashali-/" class="social-icon" aria-label="LinkedIn"><i class="ti ti-brand-linkedin"></i></a>
+          <a href="https://twitter.com/chiranthan_p" class="social-icon" aria-label="Twitter"><i class="ti ti-brand-x"></i></a>
+          <a href="https://dribbble.com/chiranthan-padmashali" class="social-icon" aria-label="Dribbble"><i class="ti ti-brand-dribbble"></i></a>
+          <a href="https://dev.to/chiranthan-padmashali" class="social-icon" aria-label="DEV.to"><i class="ti ti-brand-devto"></i></a>
+        </div>
+      </div>
+
+      <!-- ── RIGHT: Form ── -->
+      <div class="contact-form-card glass-card reveal reveal-delay-1">
+        <div class="section-label" style="margin-bottom:24px;">Send a Message</div>
+
+        <form id="contact-form" novalidate>
+
+          <!-- Name + Email -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="f-name">Full Name <span style="color:var(--gold)">*</span></label>
+              <input
+                type="text" id="f-name" name="name"
+                placeholder="John Doe"
+                autocomplete="name"
+              />
+              <span class="error-msg" id="err-name">
+                <i class="ti ti-alert-circle" style="font-size:0.85rem;"></i>
+                <span></span>
+              </span>
+            </div>
+            <div class="form-group">
+              <label for="f-email">Email Address <span style="color:var(--gold)">*</span></label>
+              <input
+                type="email" id="f-email" name="email"
+                placeholder="john@example.com"
+                autocomplete="email"
+              />
+              <span class="error-msg" id="err-email">
+                <i class="ti ti-alert-circle" style="font-size:0.85rem;"></i>
+                <span></span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Subject -->
+          <div class="form-group">
+            <label for="f-subject">Subject <span style="color:var(--gold)">*</span></label>
+            <input
+              type="text" id="f-subject" name="subject"
+              placeholder="Project inquiry / Job opportunity / Just saying hi"
+            />
+            <span class="error-msg" id="err-subject">
+              <i class="ti ti-alert-circle" style="font-size:0.85rem;"></i>
+              <span></span>
+            </span>
+          </div>
+
+          <!-- Service type -->
+          <div class="form-group">
+            <label for="f-service">I'm interested in</label>
+            <select id="f-service" name="service">
+              <option value="" disabled selected>Select a service…</option>
+              <option value="web">Web Development</option>
+              <option value="mobile">Mobile App Development</option>
+              <option value="ui">UI / UX Design</option>
+              <option value="consulting">Technical Consulting</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <!-- Budget -->
+          <div class="form-group">
+            <label for="f-budget">Project Budget (optional)</label>
+            <select id="f-budget" name="budget">
+              <option value="" disabled selected>Select a range…</option>
+              <option value="small">Under ₹50,000</option>
+              <option value="medium">₹50,000 – ₹2,00,000</option>
+              <option value="large">₹2,00,000 – ₹10,00,000</option>
+              <option value="enterprise">₹10,00,000+</option>
+            </select>
+          </div>
+
+          <!-- Message -->
+          <div class="form-group">
+            <label for="f-message">Message <span style="color:var(--gold)">*</span></label>
+            <textarea
+              id="f-message" name="message"
+              placeholder="Tell me about your project, timeline, goals, or anything else…"
+              rows="5"
+            ></textarea>
+            <span class="error-msg" id="err-message">
+              <i class="ti ti-alert-circle" style="font-size:0.85rem;"></i>
+              <span></span>
+            </span>
+            <p class="form-hint">Minimum 20 characters. The more detail, the better!</p>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="btn btn-primary form-submit" style="width:100%;justify-content:center;">
+            <div class="btn-spinner"></div>
+            <span class="btn-text" style="display:flex;align-items:center;gap:10px;">
+              <i class="ti ti-send"></i>
+              Send Message
+            </span>
+          </button>
+
+          <p style="text-align:center;margin-top:16px;font-size:0.78rem;color:var(--muted);">
+            🔒 Your information is confidential and will never be shared.
+          </p>
+
+        </form>
+      </div>
+
+    </div><!-- /contact-wrapper -->
+
+    <!-- ── FAQ strip ── -->
+    <div style="margin-top:96px;" class="reveal">
+      <div class="section-label" style="margin-bottom:32px;">Common Questions</div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;">
+
+        <div class="glass-card" style="padding:24px 28px;">
+          <h4 style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;margin-bottom:10px;color:var(--gold);">
+            What's your typical timeline?
+          </h4>
+          <p style="font-size:0.85rem;color:var(--muted);line-height:1.7;">
+            Small projects take 2–4 weeks; medium ones 1–3 months.
+            I always provide a detailed timeline before starting.
+          </p>
+        </div>
+
+        <div class="glass-card" style="padding:24px 28px;">
+          <h4 style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;margin-bottom:10px;color:var(--gold);">
+            Do you work remotely?
+          </h4>
+          <p style="font-size:0.85rem;color:var(--muted);line-height:1.7;">
+            Yes — I work with clients globally. I'm comfortable across
+            time zones and use async-first communication tools.
+          </p>
+        </div>
+
+        <div class="glass-card" style="padding:24px 28px;">
+          <h4 style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;margin-bottom:10px;color:var(--gold);">
+            What payment methods do you accept?
+          </h4>
+          <p style="font-size:0.85rem;color:var(--muted);line-height:1.7;">
+            Bank transfer, PayPal, Stripe, and UPI. I typically require
+            a 50% upfront deposit for new clients.
+          </p>
+        </div>
+
+        <div class="glass-card" style="padding:24px 28px;">
+          <h4 style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;margin-bottom:10px;color:var(--gold);">
+            Do you offer post-launch support?
+          </h4>
+          <p style="font-size:0.85rem;color:var(--muted);line-height:1.7;">
+            Absolutely. I offer 30-day free bug fixes after launch and
+            ongoing retainer packages for long-term maintenance.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ════════════════════════════
+       FOOTER
+  ════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo">C<span>.</span>P</div>
+        <p>Crafting elegant digital experiences, one line of code at a time.</p>
+      </div>
+     <!-- <div class="footer-social">
+        <a href="https://github.com/Chiranthan-codez" class="social-icon" aria-label="GitHub"><i class="ti ti-brand-github"></i></a>
+        <a href="https://www.linkedin.com/in/chiranthan-padmashali-/" class="social-icon" aria-label="LinkedIn"><i class="ti ti-brand-linkedin"></i></a>
+        <a href="https://twitter.com/chiranthan_p" class="social-icon" aria-label="Twitter"><i class="ti ti-brand-x"></i></a>
+        <a href="https://dribbble.com/chiranthan-padmashali" class="social-icon" aria-label="Dribbble"><i class="ti ti-brand-dribbble"></i></a>
+      </div>-->
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Chiranthan padmashali. All rights reserved.</span>
+      <!-- <span>Built with <span style="color:var(--gold)">♥</span> &amp; <a href="#">coffee</a></span> -->
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

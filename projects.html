@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chiranthan padmashali — Projects showcase. Web apps, UI designs, and open-source contributions." />
+  <title>Projects — Chiranthan padmashali</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/3.19.0/webfont/tabler-icons.min.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-logo">Loading</div>
+    <div class="preloader-bar"></div>
+  </div>
+
+  <div class="cursor-glow" id="cursor-glow"></div>
+  <button id="back-top" aria-label="Back to top"><i class="ti ti-arrow-up"></i>Top</button>
+
+  <!-- ── NAV ── -->
+  <nav>
+    <a href="index.html" class="nav-logo">C<span>.</span>P</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="skills.html">Skills</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="theme-toggle" aria-label="Toggle theme"></button>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ════════════════════════════
+       HEADER
+  ════════════════════════════ -->
+  <section class="section" style="padding-top:140px; padding-bottom:48px;">
+    <div class="reveal">
+      <div class="section-label">My Work</div>
+      <h1 class="section-title">Featured <em>Projects</em></h1>
+      <div class="gold-divider"></div>
+      <p class="section-subtitle">
+        A selection of real-world projects spanning web applications, developer tools,
+        and design systems — each built with intention, care, and a lot of coffee.
+      </p>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════
+       PROJECTS GRID
+  ════════════════════════════ -->
+  <section class="section" style="padding-top:0;">
+
+    <!-- Filter bar -->
+    <!--<div class="filter-bar reveal">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="web">Web App</button>
+      <button class="filter-btn" data-filter="app">Mobile</button>
+      <button class="filter-btn" data-filter="ui">UI / Design</button>
+      <button class="filter-btn" data-filter="tool">Dev Tools</button>
+      <button class="filter-btn" data-filter="oss">Open Source</button>
+    </div>-->
+
+    <!-- Cards -->
+    <div class="projects-grid">
+
+      <!-- Featured: SaaS Dashboard -->
+      <div class="project-card featured reveal" data-category="web">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1a1a2e,#16213e);">
+          <div class="project-thumb-bg" style="font-size:5rem;">project1</div>
+          <div class="project-overlay">
+            <a href="https://github.com/Chiranthan-codez/banking-system" class="btn btn-primary btn-sm">
+              <i class="ti ti-eye"></i> GitHub
+            </a>
+            <!--<a href="#" class="btn btn-outline btn-sm">
+              <i class="ti ti-brand-github"></i> Code
+            </a>-->
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Featured</span>
+            <span class="project-tag">Banking App</span>
+          </div>
+          <h3 class="project-title">Bank of India — Banking Management Platform</h3>
+          <p class="project-desc">
+            A full-stack banking management system with user authentication, account management,
+            transaction history, and admin dashboard. Built with Next.js, Node.js, and PostgreSQL.
+          </p>
+          <div class="project-footer">
+            <div class="project-tech">
+              <span style="font-size:0.78rem;color:var(--muted);margin-right:8px;">Stack:</span>
+              <span style="font-size:0.8rem;color:var(--ivory-dim);">Next.js · Node.js · PostgreSQL · Redis · Stripe</span>
+            </div>
+           <!-- <div class="project-links">
+              <a href="#" class="btn btn-outline btn-sm"><i class="ti ti-brand-github"></i></a>
+              <a href="#" class="btn btn-primary btn-sm"><i class="ti ti-external-link"></i></a>
+            </div>-->
+          </div>
+        </div>
+      </div>
+
+      <!-- DevFlow CLI -->
+      <div class="project-card reveal" data-category="tool">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0d1117,#161b22);">
+          <div class="project-thumb-bg">project2</div>
+          <div class="project-overlay">
+            <a href="https://github.com/Chiranthan-codez" class="btn btn-primary btn-sm"><i class="ti ti-eye"></i>GitHub</a>
+           <!-- <a href="#" class="btn btn-outline btn-sm"><i class="ti ti-brand-github"></i> Code</a> -->
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Featured</span>
+            <span class="project-tag">Food deliver app</span>
+          </div>
+          <h3 class="project-title">TasteTrail</h3>
+          <p class="project-desc">
+            A food delivery app connecting local restaurants with hungry customers. Features real-time
+            order tracking, personalized recommendations, and a seamless checkout experience.
+          </p>
+          <div class="project-footer">
+            <div class="project-tech">
+              <span style="font-size:0.78rem;color:var(--muted);margin-right:8px;">Stack:</span>
+              <span style="font-size:0.8rem;color:var(--ivory-dim);">Node.js · TypeScript · Commander · Inquirer</span>
+            </div>
+           <!-- <div class="project-links">
+              <a href="https://github.com/Chiranthan-codez" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                <i class="ti ti-brand-github"></i>
+              </a>
+              <a href="https://devflow-cli.vercel.app" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                <i class="ti ti-external-link"></i>
+              </a>
+            </div>-->
+          </div>
+        </div>
+      </div>
+
+      <!-- PulseUI Design System -->
+      <div class="project-card reveal reveal-delay-1" data-category="ui">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1a0e2e,#2d1057);">
+          <div class="project-thumb-bg">Project 3</div>
+          <div class="project-overlay">
+            <a href="https://github.com/Chiranthan-codez" class="btn btn-primary btn-sm"><i class="ti ti-eye"></i>GitHub</a>
+            <!--<a href="#" class="btn btn-outline btn-sm"><i class="ti ti-brand-github"></i> Code</a>-->
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Featured</span>
+            <span class="project-tag">Shoe Store</span>
+          </div>
+          <h3 class="project-title">StepUp — Shoe Store</h3>
+          <p class="project-desc">
+          This a shoe store website with a sleek, modern design and intuitive user experience. It features a dynamic product catalog,
+           detailed shoe pages with high-quality images, and a seamless checkout process.
+           Built with React, Storybook, Radix UI, and Stitches for a responsive and visually stunning interface.
+          </p>
+          <div class="project-footer">
+            <div class="project-tech">
+              <span style="font-size:0.78rem;color:var(--muted);margin-right:8px;">Stack:</span>
+              <span style="font-size:0.8rem;color:var(--ivory-dim);">React · Storybook · Radix UI · Stitches</span>
+            </div>
+           <!-- <div class="project-links">
+              <a href="https://github.com/Chiranthan-codez" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                <i class="ti ti-brand-github"></i>
+              </a>
+              <a href="https://pulseui.vercel.app" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                <i class="ti ti-external-link"></i>
+              </a>
+            </div>-->
+          </div>
+        </div>
+      </div>
+
+      <!-- SnapTrack Mobile -->
+      <div class="project-card reveal reveal-delay-2" data-category="app">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);">
+          <div class="project-thumb-bg">Project 4</div>
+          <div class="project-overlay">
+            <a href="https://github.com/Chiranthan-codez" class="btn btn-primary btn-sm"><i class="ti ti-eye"></i>GitHub</a>
+            <!--<a href="#" class="btn btn-outline btn-sm"><i class="ti ti-brand-github"></i> Code</a>-->
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Mobile</span>
+          </div>
+          <h3 class="project-title">FatNFitness— Workout Tracker App</h3>
+          <p class="project-desc">
+            A cross-platform workout tracking app with exercise libraries, progress analytics,
+            social features, and offline functionality. 1,200+ downloads on Play Store.
+          </p>
+          <div class="project-footer">
+            <div class="project-tech">
+              <span style="font-size:0.78rem;color:var(--muted);margin-right:8px;">Stack:</span>
+              <span style="font-size:0.8rem;color:var(--ivory-dim);">React Native · Expo · SQLite · Zustand</span>
+            </div>
+           <!-- <div class="project-links">
+              <a href="https://github.com/Chiranthan-codez" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                <i class="ti ti-brand-github"></i>
+              </a>
+              <a href="https://snaptrack.vercel.app" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                <i class="ti ti-external-link"></i>
+              </a>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- BlogCMS -->
+      <div class="project-card reveal" data-category="web">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#1c1006,#3d2c10);">
+          <div class="project-thumb-bg">Project 5</div>
+          <div class="project-overlay">
+            <a href="https://github.com/Chiranthan-codez" class="btn btn-primary btn-sm"><i class="ti ti-eye"></i>GitHub</a>
+            <!--<a href="#" class="btn btn-outline btn-sm"><i class="ti ti-brand-github"></i> Code</a>-->
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Web App</span>
+            <span class="project-tag">Open Source</span>
+          </div>
+          <h3 class="project-title">Quill — Headless CMS</h3>
+          <p class="project-desc">
+            A lightning-fast headless CMS with a rich MDX editor, tagging system, SEO metadata
+            builder, and a REST + GraphQL API. Deployed on Cloudflare edge workers.
+          </p>
+          <div class="project-footer">
+            <div class="project-tech">
+              <span style="font-size:0.78rem;color:var(--muted);margin-right:8px;">Stack:</span>
+              <span style="font-size:0.8rem;color:var(--ivory-dim);">Next.js · Prisma · PostgreSQL · tRPC</span>
+            </div>
+           <!-- <div class="project-links">
+              <a href="https://github.com/Chiranthan-codez" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                <i class="ti ti-brand-github"></i>
+              </a>
+              <a href="https://quill-cms.vercel.app" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                <i class="ti ti-external-link"></i>
+              </a>
+            </div>-->
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Template -->
+      <div class="project-card reveal reveal-delay-1" data-category="ui">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0c1b0c,#1a3a1a);">
+          <div class="project-thumb-bg">Project 6</div>
+          <div class="project-overlay">
+            <a href="https://github.com/Chiranthan-codez" class="btn btn-primary btn-sm"><i class="ti ti-eye"></i>GitHub</a>
+            <!--<a href="#" class="btn btn-outline btn-sm"><i class="ti ti-brand-github"></i> Code</a>-->
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">UI / Design</span>
+          </div>
+          <h3 class="project-title">Folio — Portfolio Template Kit</h3>
+          <p class="project-desc">
+            10 unique portfolio templates for developers and designers built with Astro.
+            Perfect Lighthouse scores, animated page transitions, and one-click deploy to Vercel.
+          </p>
+          <div class="project-footer">
+            <div class="project-tech">
+              <span style="font-size:0.78rem;color:var(--muted);margin-right:8px;">Stack:</span>
+              <span style="font-size:0.8rem;color:var(--ivory-dim);">Astro · TypeScript · Tailwind · GSAP</span>
+            </div>
+           <!-- <div class="project-links">
+              <a href="https://github.com/Chiranthan-codez" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                <i class="ti ti-brand-github"></i>
+              </a>
+              <a href="https://chiranthan-padmashali.vercel.app" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                <i class="ti ti-external-link"></i>
+              </a>
+            </div>-->
+          </div>
+        </div>
+      </div>
+
+      <!-- AI Summarizer -->
+      <div class="project-card reveal reveal-delay-2" data-category="web">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0e0e1e,#1a1a3e);">
+          <div class="project-thumb-bg">Project 7</div>
+          <div class="project-overlay">
+            <a href="https://github.com/Chiranthan-codez" class="btn btn-primary btn-sm"><i class="ti ti-eye"></i>GitHub</a>
+            <!--<a href="#" class="btn btn-outline btn-sm"><i class="ti ti-brand-github"></i> Code</a>-->
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Web App</span>
+            <span class="project-tag">AI</span>
+          </div>
+          <h3 class="project-title">Brevity — AI Article Summarizer</h3>
+          <p class="project-desc">
+            Paste any URL and get a crisp AI-generated summary with key takeaways,
+            sentiment analysis, and a reading-time estimate. Built with OpenAI GPT-4o API.
+          </p>
+          <div class="project-footer">
+            <div class="project-tech">
+              <span style="font-size:0.78rem;color:var(--muted);margin-right:8px;">Stack:</span>
+              <span style="font-size:0.8rem;color:var(--ivory-dim);">Next.js · OpenAI API · Vercel AI SDK · Upstash</span>
+            </div>
+           <!-- <div class="project-links">
+              <a href="https://github.com/Chiranthan-codez" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                <i class="ti ti-brand-github"></i>
+              </a>
+              <a href="https://brevity.vercel.app" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                <i class="ti ti-external-link"></i>
+              </a>
+            </div>-->
+          </div>
+        </div>
+      </div>
+
+      <!-- OSS Contribution tracker -->
+      <div class="project-card reveal" data-category="oss">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#100a0a,#2e1010);">
+          <div class="project-thumb-bg">Project 8</div>
+          <div class="project-overlay">
+            <a href="https://github.com/Chiranthan-codez" class="btn btn-primary btn-sm"><i class="ti ti-eye"></i>GitHub</a>
+            <!--<a href="#" class="btn btn-outline btn-sm"><i class="ti ti-brand-github"></i> Code</a>-->
+          </div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="project-tag">Open Source</span>
+            <span class="project-tag">Tool</span>
+          </div>
+          <h3 class="project-title">OSS-Radar — Contribution Tracker</h3>
+          <p class="project-desc">
+            A GitHub-integrated dashboard to track, visualize, and celebrate your open-source
+            contributions. OAuth login, contribution heatmap, and weekly digest emails.
+          </p>
+          <div class="project-footer">
+            <div class="project-tech">
+              <span style="font-size:0.78rem;color:var(--muted);margin-right:8px;">Stack:</span>
+              <span style="font-size:0.8rem;color:var(--ivory-dim);">SvelteKit · GitHub API · D3.js · Supabase</span>
+            </div>
+           <!-- <div class="project-links">
+              <a href="https://github.com/Chiranthan-codez" class="btn btn-outline btn-sm" target="_blank" rel="noopener noreferrer">
+                <i class="ti ti-brand-github"></i>
+              </a>
+              <a href="https://oss-radar.vercel.app" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                <i class="ti ti-external-link"></i>
+              </a>
+            </div>-->
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /projects-grid -->
+
+    <!-- CTA -->
+    <div style="text-align:center;margin-top:72px;" class="reveal">
+      <p style="color:var(--muted);margin-bottom:20px;font-size:0.9rem;">
+        See more on GitHub — I push code almost every day.
+      </p>
+      <a href="https://github.com/Chiranthan-codez" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+        <i class="ti ti-brand-github"></i>
+        View GitHub Profile
+      </a>
+    </div>
+
+  </section>
+
+  <!-- ════════════════════════════
+       FOOTER
+  ════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo">C<span>.</span>P</div>
+        <p>Crafting elegant digital experiences, one line of code at a time.</p>
+      </div>
+    <!--  <div class="footer-social">
+        <a href="https://github.com/Chiranthan-codez" class="social-icon" aria-label="GitHub"><i class="ti ti-brand-github"></i></a>
+        <a href="https://www.linkedin.com/in/chiranthan-padmashali-/" class="social-icon" aria-label="LinkedIn"><i class="ti ti-brand-linkedin"></i></a>
+        <a href="https://twitter.com/chiranthan_p" class="social-icon" aria-label="Twitter"><i class="ti ti-brand-x"></i></a>
+        <a href="https://dribbble.com/chiranthan-padmashali" class="social-icon" aria-label="Dribbble"><i class="ti ti-brand-dribbble"></i></a>
+      </div>"Full Stack Developer","UI/UX Enthusiast","Open Source Contributor","Creative Problem Solver"-->
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Chiranthan padmashali. All rights reserved.</span>
+      <!-- <span>Built with <span style="color:var(--gold)">♥</span> &amp; <a href="#">coffee</a></span> -->
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
